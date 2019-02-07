@@ -36,6 +36,7 @@ static void * wrap_xmalloc(size_t size, void *mem_user_data)
 
 static void wrap_xfree(void *ptr, void *mem_user_data)
 {
+    puts("call!!");
     xfree(ptr);
 }
 
